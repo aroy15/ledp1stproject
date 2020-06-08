@@ -1,0 +1,262 @@
+/*-------Reset Code Start------------*/
+*{
+	margin:0;
+	padding:0;
+	outline:0;
+	box-sizing:border-box;
+	font-family:arial;
+}
+html{
+	font-size:10px;
+}
+body{
+	font-size:1.6rem;
+}
+ul li{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+	color:initial;
+	transition:0.5s;
+}
+header, nav, section, aside, article, footer{
+	display: block;
+	overflow: hidden;
+}
+img{
+	width:100%;
+	height:auto;
+	border:none;
+}
+.py-50{
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.px-20{
+	padding-right:20px;
+	padding-left:20px;
+}
+/*-----X-----Reset Code End-----X-----*/
+
+/*============Main Code Stated===========*/
+
+/*------Navigation Menu start-------*/
+#header .logo{
+	height:80px;
+	background-color:rgb(67, 77, 54);
+	overflow: hidden;
+	text-align:center;
+}
+#header .logo img{
+	height:70px;
+	width:auto;
+	display:inline-block;
+	line-height:80px;
+}
+#header .menu-header{
+	background-color:darkgray;
+	padding:0 10px;
+	overflow: hidden;
+	min-height:50px;
+}
+#header nav#menu{
+	width:80%;
+	float:left;
+}
+#header nav#menu ul li{
+	float:left;
+	display: block;
+}
+#header nav#menu ul li a{
+	display:block;
+	padding:0 30px;
+	line-height:50px;
+}
+#header nav#menu ul li a:hover{
+	background:#20385E;
+	color:#fff; 
+}
+#header .menu-header .search{
+	width:20%;
+	float:right;
+	text-align:right;
+	line-height:50px;
+}
+#header .menu-header .search form{
+	position: relative;
+	height:40px;
+}
+#header .menu-header .search form input[type="text"]{
+	width:100%;
+	padding:5px 15px;
+	height:35px;
+	border-radius: 5px;
+	border:none;
+}
+#header .menu-header .search form button{
+	position: absolute;
+	line-height:40px;
+	font-size:1.8rem;
+	background:transparent;
+	border:0;
+	top:8px;
+	right:10px;
+	cursor:pointer;
+	color:rgb(85, 83, 83);
+}
+/*-----X-----Navigation Menu End-----X-----*/
+
+/*==========Main section start==============*/
+section#mainSection{
+	background-color: rgba(191, 201, 202, 0.5);
+}
+/* ------- Side bar for links start -------*/
+section#mainSection aside.blog_links{
+	width:20%;
+	float:left;
+	min-height:100vh;
+	box-shadow: 1px 1px 10px;
+	margin:20px 0;
+}
+section#mainSection aside.blog_links .links_group{
+	box-shadow: 1px 1px 5px darkblue;
+    margin-bottom: 20px;
+}
+section#mainSection aside.blog_links .links_group h2{
+	border-bottom:1px solid darkgray;
+	margin-bottom:20px;
+	padding:20px 20px 8px;
+}
+section#mainSection aside.blog_links .links_group ul li a{
+	display: block;
+	padding:10px 20px;
+}
+section#mainSection aside.blog_links .links_group ul li a:hover{
+	background-color:lightgray;
+	color:darkgreen;
+}
+/*-----X-----Side bar for links End-----X-----*/
+/* -------Main Content start -------*/
+section#mainSection #main_content{
+	width: calc(60% - 40px);
+	margin:20px 20px 0 20px;
+	float:left;
+	min-height:100vh;
+	box-shadow: 1px 1px 10px;
+}
+section#mainSection #main_content .site-theme{
+	background-image:linear-gradient(rgba(255, 0, 47, 0.81), rgba(0, 255, 0, 0.88)),  url(img/showcase.jpg);
+	background-size:cover;
+	min-height:300px;
+	padding:50px 20px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+	color:#fff;
+	margin-bottom:40px;
+	box-shadow: 1px 1px 10px gray;
+	text-align:center;
+}
+section#mainSection #main_content .site-theme h1{
+	margin-bottom:30px;
+	font-size:2.7rem;
+}
+section#mainSection #main_content .site-theme p{
+	font-size:2rem;
+}
+section#mainSection #main_content article.articles{
+	width: calc(33.333% - 20px);
+	float: left;
+	margin: 10px;
+	box-shadow: 1px 1px 10px;
+}
+section#mainSection #main_content article.articles{
+	background: rgba(100,200,200,0.5);
+}
+section#mainSection #main_content article.articles h3{
+	border-bottom:1px solid darkgray;
+	margin-bottom:20px;
+}
+section#mainSection #main_content article.articles h3,
+section#mainSection #main_content article.articles p{
+	padding:10px;
+}
+/*-----X-----Main Content End-----X-----*/
+/* ------- Contact-section start -------*/
+section#mainSection #contact-section{
+	width:20%;
+	float:left;
+	min-height:100vh;
+	box-shadow: 1px 1px 10px;
+	margin:20px 0;
+}
+section#mainSection #contact-section h2{
+	border-bottom:1px solid darkgray;
+	padding-bottom:8px;
+	margin-bottom:20px;
+}
+section#mainSection #contact-section input[type="text"],
+section#mainSection #contact-section input[type="email"],
+section#mainSection #contact-section textarea{
+	display: block;
+	width:100%;
+	padding:8px 15px;
+	margin-bottom:20px;
+	border-radius:5px;
+	border:1px solid darkgray;
+}
+section#mainSection #contact-section input[type="submit"],
+section#mainSection #contact-section input[type="reset"]{
+	padding:10px 20px;
+	background:#1FA363;
+	border:none;
+	color:#000;
+	margin-top:20px;
+	cursor:pointer;
+	transition:0.5s;
+}
+section#mainSection #contact-section input[type="submit"]:hover,
+section#mainSection #contact-section input[type="reset"]:hover{
+	background: #ced8af
+}
+section#mainSection #contact-section textarea{
+	resize:vertical;
+}
+/*-----X-----contact-section End-----X-----*/
+/*-------Footer Section Start----------*/
+footer#footer{
+	padding:30px 20px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	width:100%;
+	padding:30px;
+	margin:auto;
+	background: #282923;
+	color:#fff;
+	height: 50px;
+}
+footer#footer .copyright{
+	text-align:right;
+	margin-right:40px;
+}
+footer#footer .social-links a{
+	display: inline-block;
+	font-size:3rem;
+	margin-right:10px;
+}
+footer#footer .social-links a i.fa-facebook-official{
+	color:#395599;
+}
+footer#footer .social-links a i.fa-twitter-square{
+	color:#1C9DEB;
+}
+footer#footer .social-links a i.fa-linkedin-square{
+	color:#0C61C0;
+}
+footer#footer .social-links a i.fa-instagram{
+	color:#D53E5D;
+}
+/*-----X-----footer-section End-----X-----*/
